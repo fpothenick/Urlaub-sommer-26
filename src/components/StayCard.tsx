@@ -19,12 +19,9 @@ export default function StayCard({ stay }: StayCardProps) {
       </div>
       <div className="stay-card-content">
         <h3 className="stay-card-title">{stay.title}</h3>
-        <p className="stay-card-price">{stay.priceLabel}</p>
+        <p className="stay-card-price">€{stay.pricePerPerson} pro Person</p>
         {stay.location && (
           <p className="stay-card-location">📍 {stay.location}</p>
-        )}
-        {stay.notes && (
-          <p className="stay-card-notes">{stay.notes}</p>
         )}
         {stay.airbnbUrl && (
           <a 
