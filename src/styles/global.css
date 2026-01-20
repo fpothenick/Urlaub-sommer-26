@@ -182,24 +182,33 @@ body {
 .date-selection-page {
   min-height: 100vh;
   padding: var(--spacing-xl);
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 
 .date-selection-page::before {
   content: '';
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.date-selection-page::after {
+  content: '';
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgba(31, 41, 55, 0.85);
   backdrop-filter: blur(10px);
-  z-index: 0;
+  z-index: -1;
 }
 
 .date-selection-content {
@@ -328,24 +337,33 @@ body {
 .home-page {
   min-height: 100vh;
   padding: var(--spacing-xl);
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 
 .home-page::before {
   content: '';
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.home-page::after {
+  content: '';
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgba(31, 41, 55, 0.85);
   backdrop-filter: blur(10px);
-  z-index: 0;
+  z-index: -1;
 }
 
 
@@ -484,24 +502,33 @@ body {
 .package-detail-page {
   min-height: 100vh;
   padding: var(--spacing-lg);
-  background-image: url('/images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
 }
 
 .package-detail-page::before {
   content: '';
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.package-detail-page::after {
+  content: '';
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: rgba(31, 41, 55, 0.85);
   backdrop-filter: blur(10px);
-  z-index: 0;
+  z-index: -1;
 }
 
 .package-detail-content {
