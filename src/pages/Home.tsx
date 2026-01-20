@@ -7,6 +7,13 @@ export default function Home() {
   return (
     <div className="home-page">
       <div className="home-content">
+        <button 
+          className="back-button"
+          onClick={() => navigate('/dates')}
+        >
+          ← Zeitraum
+        </button>
+
         <h1>Wähle dein Sommerpaket 2026</h1>
         <p className="home-subtitle">
           Drei einzigartige Pakete mit den schönsten Unterkünften

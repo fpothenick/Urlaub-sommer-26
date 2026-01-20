@@ -14,7 +14,7 @@ export default function Welcome() {
 
         <button 
           className="welcome-button"
-          onClick={() => navigate('/home')}
+          onClick={() => navigate('/dates')}
         >
           Los geht's! 🎉
         </button>

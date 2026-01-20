@@ -38,12 +38,12 @@ export const packages: Package[] = [
       cons: ["Etwas abgelegen", "Keine Klimaanlage"]
     },
     flight: {
-      pricePerPerson: 250,
-      details: "Direktflug ab München"
+      pricePerPerson: 230,
+      details: "Berlin (BER) → Olbia (OLB)"
     },
     carRental: {
-      pricePerPerson: 80,
-      details: "Kompaktklasse, 7 Tage"
+      pricePerPerson: 100,
+      details: "7 Tage"
     }
   },
   {
@@ -60,12 +60,12 @@ export const packages: Package[] = [
       cons: ["Steile Anfahrt", "Kein WLAN"]
     },
     flight: {
-      pricePerPerson: 180,
-      details: "Flug ab München"
+      pricePerPerson: 230,
+      details: "Berlin (BER) → Olbia (OLB)"
     },
     carRental: {
-      pricePerPerson: 90,
-      details: "SUV, 7 Tage"
+      pricePerPerson: 100,
+      details: "7 Tage"
     }
   },
   {
@@ -82,12 +82,12 @@ export const packages: Package[] = [
       cons: ["Laut am Abend", "Kein Parkplatz"]
     },
     flight: {
-      pricePerPerson: 220,
-      details: "Direktflug ab Frankfurt"
+      pricePerPerson: 230,
+      details: "Berlin (BER) → Olbia (OLB)"
     },
     carRental: {
-      pricePerPerson: 70,
-      details: "Kleinwagen, 7 Tage"
+      pricePerPerson: 100,
+      details: "7 Tage"
     }
   }
 ];
