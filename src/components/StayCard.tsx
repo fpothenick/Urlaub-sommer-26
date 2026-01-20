@@ -1,7 +1,7 @@
-import type { Stay } from '../data/packages';
+import type { Package } from '../data/packages';
 
 interface StayCardProps {
-  stay: Stay;
+  stay: Package['accommodation'];
 }
 
 export default function StayCard({ stay }: StayCardProps) {
