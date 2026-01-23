@@ -667,6 +667,18 @@ body {
   margin-bottom: var(--spacing-lg);
 }
 
+@media (max-width: 768px) {
+  .accommodation-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .airbnb-link {
+    align-self: stretch;
+    text-align: center;
+  }
+}
+
 .accommodation-header-left {
   flex: 1;
 }
@@ -722,6 +734,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .pros-cons-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
 }
 
 .pros-cons {
