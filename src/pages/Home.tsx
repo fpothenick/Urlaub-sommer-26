@@ -32,7 +32,7 @@ export default function Home() {
                   <p className="package-subtitle">{pkg.subtitle}</p>
                 )}
                 <p className="package-price-total">
-                  Ab €{pkg.accommodation.pricePerPerson + pkg.flight.pricePerPerson + pkg.carRental.pricePerPerson} pro Person
+                  Ungefähr €{pkg.accommodation.pricePerPerson + pkg.flight.pricePerPerson + pkg.carRental.pricePerPerson} pro Person
                 </p>
               </div>
               <span className="package-arrow">→</span>

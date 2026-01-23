@@ -126,7 +126,7 @@ body {
 }
 
 .welcome-button {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
   color: white;
   border: none;
   padding: 18px 48px;
@@ -138,7 +138,7 @@ body {
   min-width: 220px;
   transition: all 0.3s ease;
   box-shadow: 
-    0 4px 15px rgba(59, 130, 246, 0.4),
+    0 4px 15px rgba(17, 94, 89, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.1);
   position: relative;
   overflow: hidden;
@@ -157,12 +157,12 @@ body {
 }
 
 .welcome-button:hover {
-  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%);
   transform: translateY(-2px);
   box-shadow: 
-    0 8px 25px rgba(59, 130, 246, 0.5),
+    0 8px 25px rgba(17, 94, 89, 0.5),
     0 0 0 1px rgba(255, 255, 255, 0.2),
-    0 0 30px rgba(59, 130, 246, 0.3);
+    0 0 30px rgba(15, 118, 110, 0.3);
 }
 
 .welcome-button:hover::before {
@@ -172,7 +172,7 @@ body {
 .welcome-button:active {
   transform: translateY(0);
   box-shadow: 
-    0 2px 10px rgba(59, 130, 246, 0.4),
+    0 2px 10px rgba(17, 94, 89, 0.4),
     0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
@@ -243,7 +243,7 @@ body {
 }
 
 .date-card {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
   border: none;
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
@@ -256,7 +256,7 @@ body {
   align-items: center;
   box-shadow: 
     0 10px 25px rgba(0, 0, 0, 0.3),
-    0 5px 15px rgba(59, 130, 246, 0.4);
+    0 5px 15px rgba(17, 94, 89, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -281,8 +281,8 @@ body {
   transform: translateY(-4px);
   box-shadow: 
     0 15px 35px rgba(0, 0, 0, 0.4),
-    0 8px 25px rgba(59, 130, 246, 0.6),
-    0 0 40px rgba(96, 165, 250, 0.4);
+    0 8px 25px rgba(17, 94, 89, 0.6),
+    0 0 40px rgba(15, 118, 110, 0.4);
 }
 
 .date-card:hover::before {
@@ -400,7 +400,7 @@ body {
 }
 
 .package-card {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
   border: none;
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
@@ -413,7 +413,7 @@ body {
   align-items: center;
   box-shadow: 
     0 10px 25px rgba(0, 0, 0, 0.3),
-    0 5px 15px rgba(59, 130, 246, 0.4);
+    0 5px 15px rgba(17, 94, 89, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -438,8 +438,8 @@ body {
   transform: translateY(-4px);
   box-shadow: 
     0 15px 35px rgba(0, 0, 0, 0.4),
-    0 8px 25px rgba(59, 130, 246, 0.6),
-    0 0 40px rgba(96, 165, 250, 0.4);
+    0 8px 25px rgba(17, 94, 89, 0.6),
+    0 0 40px rgba(15, 118, 110, 0.4);
 }
 
 .package-card:hover::before {
@@ -594,12 +594,12 @@ body {
 
 /* Accommodation Card */
 .accommodation-card {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 
     0 10px 25px rgba(0, 0, 0, 0.3),
-    0 5px 15px rgba(59, 130, 246, 0.4);
+    0 5px 15px rgba(17, 94, 89, 0.4);
   position: relative;
 }
 
@@ -634,6 +634,18 @@ body {
   z-index: 2;
 }
 
+.accommodation-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.accommodation-images-grid .accommodation-image {
+  height: 300px;
+}
+
 .accommodation-image img {
   width: 100%;
   height: 100%;
@@ -645,6 +657,18 @@ body {
   padding: var(--spacing-xl);
   position: relative;
   z-index: 2;
+}
+
+.accommodation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.accommodation-header-left {
+  flex: 1;
 }
 
 .accommodation-content h3 {
@@ -665,11 +689,43 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-text);
+  margin-bottom: 0;
+}
+
+.accommodation-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.airbnb-link {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  white-space: nowrap;
+}
+
+.airbnb-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(4px);
+}
+
+.pros-cons-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
   margin-bottom: var(--spacing-lg);
 }
 
 .pros-cons {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: 0;
 }
 
 .pros-cons h4 {
@@ -694,40 +750,25 @@ body {
 }
 
 .pros-list li {
-  color: #d1fae5;
+  color: #6ee7b7;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
 }
 
 .cons-list li {
-  color: #fecaca;
+  color: #fca5a5;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.airbnb-link {
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.2);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  border-radius: var(--border-radius);
-  color: var(--color-text);
-  text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.airbnb-link:hover {
-  background: rgba(255, 255, 255, 0.3);
-  transform: translateX(4px);
 }
 
 /* Price Card */
 .price-card {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
   box-shadow: 
     0 10px 25px rgba(0, 0, 0, 0.3),
-    0 5px 15px rgba(59, 130, 246, 0.4);
+    0 5px 15px rgba(17, 94, 89, 0.4);
   position: relative;
   overflow: hidden;
 }
@@ -775,13 +816,13 @@ body {
 
 /* Package Total */
 .package-total {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
   border-radius: var(--border-radius);
   padding: var(--spacing-xl);
   text-align: center;
   box-shadow: 
     0 10px 25px rgba(0, 0, 0, 0.3),
-    0 5px 15px rgba(59, 130, 246, 0.4);
+    0 5px 15px rgba(17, 94, 89, 0.4);
   margin-top: var(--spacing-xl);
   position: relative;
   overflow: hidden;
@@ -836,12 +877,12 @@ body {
    STAY CARD
    ========================================== */
 .stay-card {
-  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #115e59 0%, #0f766e 100%);
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: 
     0 10px 25px rgba(0, 0, 0, 0.3),
-    0 5px 15px rgba(59, 130, 246, 0.4);
+    0 5px 15px rgba(17, 94, 89, 0.4);
   transition: all 0.3s ease;
   position: relative;
 }
@@ -867,8 +908,8 @@ body {
 .stay-card:hover {
   box-shadow: 
     0 15px 35px rgba(0, 0, 0, 0.4),
-    0 8px 25px rgba(59, 130, 246, 0.6),
-    0 0 40px rgba(96, 165, 250, 0.4);
+    0 8px 25px rgba(17, 94, 89, 0.6),
+    0 0 40px rgba(15, 118, 110, 0.4);
   transform: translateY(-4px);
 }
 
