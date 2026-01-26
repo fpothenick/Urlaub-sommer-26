@@ -35,7 +35,7 @@ export const packages: Package[] = [
       image: "/images/U1_1.avif",
       images: ["/images/U1_1.avif", "/images/U1_2.avif"],
       airbnbUrl: "https://www.airbnb.de/rooms/852938425917488327?adults=8&check_in=2026-08-17&check_out=2026-08-23&children=0&infants=0&pets=0&wishlist_item_id=11005831339069&source_impression_id=p3_1769198483_P3ZK2kWFd-uIOD8e&previous_page_section_name=1000",
-      pricePerPerson: 512,
+      pricePerPerson: 525,
       pros: [
         "Krasse Aussicht",
         "4 Schlafzimmer mit jeweils einem Doppelbett",
@@ -51,45 +51,45 @@ export const packages: Package[] = [
       ]
     },
     flight: {
-      pricePerPerson: 230,
-      details: "Berlin (BER) → Olbia (OLB)\nOlbia (OLB) → Berlin (BER)"
+      pricePerPerson: 220,
+      details: "Berlin (BER) → Olbia (OLB) → Berlin (BER)"
     },
     carRental: {
-      pricePerPerson: 100,
-      details: "7 Tage"
+      pricePerPerson: 90,
+      details: "6 Tage"
     }
   },
   {
     id: "2",
-    name: "Paket 2 - Eckterrasse",
-    subtitle: "Bucht & Meer",
+    name: "Paket 2 - Frühstück mit Aussicht",
+    subtitle: "Küste & Meer",
     accommodation: {
-      title: "Villa Conca Verde",
-      location: "Conca Verde, Italien",
+      title: "Villa Tamarix",
+      location: "Costa Paradiso, Italien",
       image: "/images/U2_1.avif",
       images: ["/images/U2_1.avif", "/images/U2_2.avif"],
-      airbnbUrl: "https://www.airbnb.de/rooms/49997623?adults=8&check_in=2026-08-17&check_out=2026-08-23&children=0&infants=0&pets=0&wishlist_item_id=11005831282052&source_impression_id=p3_1769200518_P3TvEoN8NnGu2L5D&previous_page_section_name=1000",
-      pricePerPerson: 387,
+      airbnbUrl: "https://www.airbnb.de/rooms/1107876138293165753?adults=8&check_in=2026-08-15&check_out=2026-08-21&guests=7&search_mode=regular_search&amenities%5B%5D=7&source_impression_id=p3_1769451862_P33DSmvFOhvmMTih&previous_page_section_name=1000&federated_search_id=cc39041b-98ea-42b4-abc8-a72194c77a15",
+      pricePerPerson: 456,
       pros: [
-        "Preisgünstig",
-        "Sehr gute Aussicht",
-        "Klimaanlage",
-        "Großer Pool",
-        "Strand, Restaurants und Supermärkte gut mit Auto erreichbar"
+        "Krasse Aussicht",
+        "4 Schlafzimmer",
+        "Sehr gepflegt"
       ],
       cons: [
-        "1 Stunde Autofahrt vom Flughafen",
-        "Kein Handtuchpaket",
-        "Schlafcouch"
+        "1,5 Stunden Autofahrt vom Flughafen",
+        "Keine Klimaanlage",
+        "Gemeinsame Poolnutzung",
+        "Handtücher und Bettwäsche gegen Aufpreis",
+        "Ein Hochbett"
       ]
     },
     flight: {
-      pricePerPerson: 230,
-      details: "Berlin (BER) → Olbia (OLB)\nOlbia (OLB) → Berlin (BER)"
+      pricePerPerson: 220,
+      details: "Berlin (BER) → Olbia (OLB) → Berlin (BER)"
     },
     carRental: {
-      pricePerPerson: 100,
-      details: "7 Tage"
+      pricePerPerson: 90,
+      details: "6 Tage"
     }
   },
   {
@@ -116,12 +116,12 @@ export const packages: Package[] = [
       ]
     },
     flight: {
-      pricePerPerson: 230,
-      details: "Berlin (BER) → Olbia (OLB)\nOlbia (OLB) → Berlin (BER)"
+      pricePerPerson: 220,
+      details: "Berlin (BER) → Olbia (OLB) → Berlin (BER)"
     },
     carRental: {
-      pricePerPerson: 100,
-      details: "7 Tage"
+      pricePerPerson: 90,
+      details: "6 Tage"
     }
   },
   {
@@ -134,7 +134,7 @@ export const packages: Package[] = [
       image: "/images/U4_1.avif",
       images: ["/images/U4_1.avif", "/images/U4_2.avif"],
       airbnbUrl: "https://www.airbnb.de/rooms/3318735?adults=8&check_in=2026-08-17&check_out=2026-08-23&children=0&infants=0&pets=0&wishlist_item_id=11005695533803&source_impression_id=p3_1769201916_P3tNl8ifuk4RsxOl&previous_page_section_name=1000",
-      pricePerPerson: 325,
+      pricePerPerson: 330,
       pros: [
         "Günstig",
         "Eigenes Haus",
@@ -150,12 +150,12 @@ export const packages: Package[] = [
       ]
     },
     flight: {
-      pricePerPerson: 230,
-      details: "Berlin (BER) → Olbia (OLB)\nOlbia (OLB) → Berlin (BER)"
+      pricePerPerson: 220,
+      details: "Berlin (BER) → Olbia (OLB) → Berlin (BER)"
     },
     carRental: {
-      pricePerPerson: 100,
-      details: "7 Tage"
+      pricePerPerson: 90,
+      details: "6 Tage"
     }
   }
 ];
