@@ -5,10 +5,17 @@ export default function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'instant'
+    // Sofort scrollen ohne Verzögerung
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    
+    // Zusätzlich als Backup
+    requestAnimationFrame(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'instant'
+      });
     });
   }, [pathname]);
 
