@@ -7,16 +7,11 @@ export default function DateSelection() {
     <div className="date-selection-page">
       <div className="date-selection-content">
         <h1>Sommerurlaub 2026</h1>
-        <p className="date-subtitle">
-          15. - 21. August 2026 (6 Tage)
-        </p>
-
-        <button 
-          className="travel-button"
-          onClick={() => navigate('/home')}
-        >
-          Zu den Paketen →
-        </button>
+        
+        <div className="date-header">
+          <p className="date-range">15. - 21. August 2026</p>
+          <p className="date-days">6 Tage</p>
+        </div>
 
         <div className="info-section">
           <h2>Wichtige Hinweise</h2>
@@ -24,13 +19,14 @@ export default function DateSelection() {
           <div className="info-card">
             <h3>🏠 Unterkünfte</h3>
             <p>
-              Generell gibt es sehr selten komplett private Villen, wie auf Kreta. 
-              Daher ein Mix aus Mehrfamilienhäusern, Wohnungen und Villen.
+              Generell gibt es sehr selten komplett private Villen wie auf Kreta. 
+              Daher hier ein Mix aus Mehrfamilienhäusern, Wohnungen und Villen.
             </p>
           </div>
 
           <div className="info-card">
             <h3>✈️ Optimaler Flug per easyJet</h3>
+            <p>Auswahl zwischen Handgepäck oder Aufgabegepäck:</p>
             <div className="flight-images">
               <div className="flight-option">
                 <img src="/images/Flug_1.png" alt="Direktflug mit Handgepäck" />
@@ -42,7 +38,7 @@ export default function DateSelection() {
               </div>
             </div>
             <p className="flight-note">
-              So schafft auch Lukas es pünktlich zu Roland Kaiser 😉
+              So schafft es auch Lukas pünktlich zu Roland Kaiser 😉
             </p>
           </div>
 
@@ -54,6 +50,13 @@ export default function DateSelection() {
             </div>
           </div>
         </div>
+
+        <button 
+          className="travel-button"
+          onClick={() => navigate('/home')}
+        >
+          Zu den Paketen →
+        </button>
       </div>
     </div>
   );

@@ -73,7 +73,8 @@ export const packages: Package[] = [
       pros: [
         "Krasse Aussicht",
         "4 Schlafzimmer",
-        "Sehr gepflegt"
+        "Sehr gepflegt",
+        "Strand, Restaurants und Supermärkte in unmittelbarer Nähe"
       ],
       cons: [
         "1,5 Stunden Autofahrt vom Flughafen",
