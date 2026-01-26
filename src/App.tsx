@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import Welcome from './pages/Welcome';
 import DateSelection from './pages/DateSelection';
 import Home from './pages/Home';
@@ -7,6 +8,12 @@ import ScrollToTop from './components/ScrollToTop';
 import './styles/global.css';
 
 function App() {
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />
